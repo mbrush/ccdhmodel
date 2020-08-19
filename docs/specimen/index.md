@@ -7,12 +7,22 @@ Any material sample taken from a biological entity (living or dead), or taken fr
 
 ### Classes
 
+ * [Entity](Entity.md) - Any resource that has its own identifier
+    * [ConditionDiagnosis](ConditionDiagnosis.md)
+    * [DocumentReference](DocumentReference.md)
+    * [Organization](Organization.md)
+    * [Project](Project.md)
+    * [Visit](Visit.md)
+ * [Specimen](Specimen.md) - -> Any material sample taken from a biological entity (living or dead), or taken from a physical object or the environment. (Adapted from FHIR) Specimens are usually collected as an example of their kind, often for use in some investigation.
 
 ### Mixins
 
 
 ### Slots
 
+ * [id](id.md) - -> The 'logical' identifier of the entity in the system of record, e.g. a UUID. This 'id' is unique within a given system. The identified entity may have a different 'id' in a different system.
+    * [Entity➞id](Entity_id.md)
+    * [Specimen➞id](Specimen_id.md)
 
 ### Types
 
@@ -40,6 +50,7 @@ Any material sample taken from a biological entity (living or dead), or taken fr
  * [Double](types/Double.md)  (**float**)  - A real number that conforms to the xsd:double specification
  * [Float](types/Float.md)  (**float**)  - A real number that conforms to the xsd:float specification
  * [Integer](types/Integer.md)  (**int**)  - An integer
+ * [Literal](types/Literal.md)  ([String](types/String.md)) 
  * [Ncname](types/Ncname.md)  (**NCName**)  - Prefix part of CURIE
  * [Nodeidentifier](types/Nodeidentifier.md)  (**NodeIdentifier**)  - A URI, CURIE or BNODE that represents a node in a model.
  * [Objectidentifier](types/Objectidentifier.md)  (**ElementIdentifier**)  - A URI or CURIE that represents an object in the model.

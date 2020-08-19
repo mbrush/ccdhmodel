@@ -9,7 +9,10 @@ prefixes:
 default_prefix: types
 
 imports:
+  - prefixes
   - biolinkml:types
 
 types:
   literal:
+    typeof: string
+    description:
